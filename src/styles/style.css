@@ -18,6 +18,17 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.to-do-individual {
+  border: 2px black solid;
+  padding: 1em;
+  border-radius: 20px;
+  margin-bottom: 1em;
 }
 
 .add-to-do-form {
@@ -34,6 +45,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.add-to-do-form label {
+  margin-bottom: 0.5em;
 }
 
 .add-to-do-form .title-input {

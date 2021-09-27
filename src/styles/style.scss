@@ -11,14 +11,23 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
 }
 
+.to-do-individual {
+    border: 2px black solid;
+    padding: 1em;
+    border-radius: 20px;
+    margin-bottom: 1em;
+}
 .add-to-do-form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    label {
+        margin-bottom: 0.5em;
+    }
     .title-input {
         width: 60vw;
         height: 1.2em;
