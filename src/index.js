@@ -10,6 +10,13 @@ thursday.priority = 1;
 thursday.notes = "Do something";
 thursday.status = "Not done";
 
+const friday = new toDo();
+friday.title = 'Drink tea';
+friday.descr = 'Drink tea';
+friday.dueDate = '2021-06-03';
+friday.priority = 10;
+friday.notes = 'Yum';
+friday.status = 'Not done';
 
 function home() {
   const container = document.createElement("div");
@@ -17,6 +24,7 @@ function home() {
 
   const toDoList = [];
   toDoList.push(thursday);
+  toDoList.push(friday);
 
   const toDoContainer = document.createElement("div");
 
