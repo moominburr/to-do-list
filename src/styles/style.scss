@@ -12,3 +12,28 @@
     align-items: center;
     text-align: center;
 }
+
+.add-to-do-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title-input {
+        width: 60vw;
+        height: 1.2em;
+        margin-bottom: 1em;
+    }
+    .descr-input {
+        width: 60vw;
+        min-height: 3em;
+        margin-bottom: 1em;
+    }
+    .date-input {
+        min-width: 20vw;
+        margin-bottom: 1em;
+    }
+    .priority-input {
+        width: 40vw;
+    }
+}
