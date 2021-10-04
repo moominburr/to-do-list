@@ -18,6 +18,14 @@ friday.priority = 10;
 friday.notes = 'Yum';
 friday.status = 'Not done';
 
+const saturday = new toDo();
+saturday.title = 'Make lunch';
+saturday.descr = 'Make lunch';
+saturday.dueDate = '2021-09-03';
+saturday.priority = 8;
+saturday.notes = 'Tofu probably';
+saturday.status = 'Not done';
+
 function home() {
   const container = document.createElement("div");
   container.classList.add("container");
@@ -25,6 +33,7 @@ function home() {
   const toDoList = [];
   toDoList.push(thursday);
   toDoList.push(friday);
+  toDoList.push(saturday);
 
   const toDoContainer = document.createElement("div");
 
@@ -42,6 +51,11 @@ function home() {
       p.innerText = el[prop];
       toDo.appendChild(p);
     }
+    const checkbox = document.createElement('input');
+    checkbox.setAttribute('type', 'checkbox');
+    checkbox.setAttribute('id', 'check');
+    checkbox.classList.add('checkbox');
+    toDo.appendChild(checkbox);
     toDoContainer.appendChild(toDo);
   });
 

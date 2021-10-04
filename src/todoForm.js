@@ -1,3 +1,5 @@
+import toDo from './todo';
+
 export default function todoForm() {
   const form = document.createElement("div");
   form.classList.add("add-to-do-form");
@@ -49,6 +51,28 @@ export default function todoForm() {
   priorityLabel.setAttribute("for", "priority");
   priorityLabel.innerHTML = "Priority:";
 
+  const notesInput = document.createElement('input');
+  notesInput.setAttribute('type', 'text');
+  notesInput.classList.add('notes-input');
+  notesInput.setAttribute('id', 'notes');
+  const notesLabel = document.createElement('label');
+
+  
+  function submitToDo(){
+      const newToDo = new toDo();
+      newToDo.title = titleInput.value;
+      newToDo.descr = descriptionInput.value;
+      newToDo.dueDate = dateInput.value;
+      newToDo.priority = priorityInput.value;
+      newToDo.notes = '';
+      newToDo.status = 'not done';
+  }
+
+  const submitBtn = document.createElement('button');
+  submitBtn.classList.add('submit-button');
+  submitBtn.innerText = 'Submit To Do';
+  submitBtn.addEventListener('click', submitToDo);
+
   form.appendChild(titleLabel);
   form.appendChild(titleInput);
   form.appendChild(descrLabel);
@@ -58,5 +82,6 @@ export default function todoForm() {
   form.appendChild(priorityLabel);
   form.appendChild(priorityInput);
   form.appendChild(priorityNum);
+  form.appendChild(submitBtn);
   return form;
 }
