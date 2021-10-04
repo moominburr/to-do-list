@@ -31,6 +31,13 @@
   margin-bottom: 1em;
 }
 
+.delete-button {
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 0.3em;
+  cursor: pointer;
+}
+
 .add-to-do-form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -70,5 +77,16 @@
 
 .add-to-do-form .priority-input {
   width: 40vw;
+}
+
+.add-to-do-form .notes-input {
+  width: 60vw;
+  min-height: 3em;
+  margin-bottom: 1em;
+}
+
+.add-to-do-form .submit-button {
+  padding: 1em;
+  margin-bottom: 1em;
 }
 /*# sourceMappingURL=style.css.map */

@@ -20,6 +20,12 @@
     border-radius: 20px;
     margin-bottom: 1em;
 }
+.delete-button {
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 0.3em;
+    cursor: pointer;
+}
 .add-to-do-form {
     display: flex;
     flex-direction: column;
@@ -45,4 +51,14 @@
     .priority-input {
         width: 40vw;
     }
+    .notes-input {
+        width: 60vw;
+        min-height: 3em;
+        margin-bottom: 1em;
+    }
+    .submit-button {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+    
 }
